@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de HTML</title>
+</head>
+<body>
+    <h1 id="inicio">Revisão de HTML</h1>
+    <hr/>
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#estrutura-basica">Estrutura básica do HTML</a></li>
+        <li><a href="#tags">Sobre tags</a></li>
+        <li><a href="#atributos">Sobre atributos</a></li>
+        <li><a href="#texto">Sobre texto</a></li>
+        <li><a href="#listas">Sobre listas</a></li>
+        <li><a href="#links">Sobre links</a></li>
+    </ul>
+    <h2>Uma revisão sobre o conteúdo, absorvido durante o curso</h2>
+
+    <h3 id="estrutura-basica">Estrutura básica do HTML</h3>
+     <a href="#inicio">(Volta)</a>
+    <p>A estrutura básica do HTML como o nome já diz é a base de todo o código, em outras palavras o esqueleto onde o conteúdo da página que será criada vai ser inserido.</p>
+    <ol>
+        <li>
+            <strong>DOCTYPE</strong>: Declaração do tipo de documento, que informa ao navegador que o documento é um HTML5.
+        </li>
+        <li>
+            <strong>html</strong>: A raiz do documento HTML, que envolve todo o conteúdo da página. O atributo "lang" especifica o idioma do conteúdo.
+        </li>
+        <li>
+            <strong>head</strong>: Contém metadados sobre o documento, como o conjunto de caracteres, título da página e links para estilos e scripts.
+            <ul>
+                <li>
+                    <i>meta</i>: Fornece metadados sobre o documento, como a descrição e palavras-chave. Por exemplo:
+                    <ul>
+                        <li>description Uma breve descrição do conteúdo da página.</li>
+                        <li>keywords: Palavras-chave relevantes para o conteúdo da página.</li>
+                        <li>name: Um nome descritivo para o conteúdo da página.</li>
+                        <li>content: O valor do metadado, que pode ser uma descrição, palavra-chave ou outro tipo de informação.</li>
+                        <li>charset: O conjunto de caracteres usado no documento, como UTF-8.</li>
+                        <li>etc.</li>
+                    </ul>
+                    <blockquote>,<i>Os metadados são importantes para SEO e acessibilidade.</i></blockquote>
+                </li>
+                <li><i>title</i>: O título da página, que é exibido na aba do navegador e nos resultados de busca.</li>
+                <p>
+                    O título deve ser descritivo e conter palavras-chave relevantes para o conteúdo da página.
+                </p>
+            </ul>
+            <p>
+                O conteúdo da seção <i>head</i> é fundamental para o correto funcionamento e apresentação da página.
+            </p>
+        </li>
+        <li><strong>body</strong>: A seção do documento que contém o conteúdo visível da página, como texto, imagens e outros elementos.</li>
+        <p>A estrutura base do HTML é o alicerce fundamental de qualquer página web, agindo como o esqueleto que sustenta todo o conteúdo. Sem ela, o navegador não seria capaz de interpretar e renderizar as informações de forma coesa e organizada. É essa estrutura que define o tipo de documento, o idioma da página e onde o conteúdo visível e as informações meta (como título e links para folhas de estilo) devem ser localizados, garantindo que a página seja exibida corretamente e seja acessível para os usuários e motores de busca.</p>
+    </ol>
+    <h3 id="tags">Sobre tags</h3>
+     <a href="#inicio">(Volta)</a>
+    <p>As tags são os elementos fundamentais do HTML, usadas para estruturar e formatar o conteúdo da página. Elas são compostas por uma tag de abertura, que inicia o elemento, e uma tag de fechamento, que encerra o elemento. Entre essas tags, pode haver conteúdo ou outros elementos aninhados.</p>
+    <p>Algumas tags são auto-fechadas, como a tag <i>img</i>, que não requer uma tag de fechamento separada. As tags podem ter atributos adicionais que fornecem informações extras sobre o elemento, como o atributo "src" em uma imagem ou "href" em um link.</p>
+    <p>As tags são essenciais para a criação de páginas web, pois definem a estrutura e o estilo do conteúdo, permitindo que os navegadores interpretem e exibam as informações corretamente.</p>
+    <h3 id="atributos">Sobre os atributos das tags</h3>
+     <a href="#inicio">(Volta)</a>
+    <p>Os atributos são informações adicionais que podem ser adicionadas às tags HTML para fornecer mais contexto ou modificar o comportamento do elemento. Eles são sempre especificados na tag de abertura e geralmente vêm em pares de nome e valor.</p>
+    <p>Por exemplo, na tag <i>img</i>, o atributo <i>src</i> especifica a URL da imagem, enquanto o atributo <i>alt</i> fornece uma descrição alternativa da imagem para leitores de tela e quando a imagem não pode ser exibida.</p>
+    <p>Os atributos são importantes para a acessibilidade, SEO e para fornecer informações adicionais sobre os elementos da página.</p>
+    <h3 id="texto">Sobre o texto</h3>
+     <a href="#inicio">(Volta)</a>
+    <p>O texto é o conteúdo principal de uma página web e é exibido dentro da seção <i>body</i>. Ele pode ser formatado usando várias tags HTML, como <i>p</i> para parágrafos, <i>h1</i> a <i>h6</i> para cabeçalhos e <i>span</i> para trechos de texto em linha.</p> 
+    <h3 id="listas">Sobre as listas</h3>
+     <a href="#inicio">(Volta)</a>
+    <p>As listas são usadas para agrupar itens relacionados e podem ser ordenadas ou não ordenadas. As listas não ordenadas são criadas com a tag <i>ul</i>, enquanto as listas ordenadas são criadas com a tag <i>ol</i>. Cada item da lista é definido com a tag <i>li</i>.</p>
+    <ul>
+        <li>listas ordenadas</li>
+        <p>Listas ordenadas no HTML, representadas pela tag ol (de "ordered list"), são usadas para apresentar itens em uma sequência específica, onde a ordem é crucial para o significado ou a compreensão do conteúdo. Ao contrário das listas não ordenadas, que usam marcadores como pontos, as listas ordenadas utilizam por padrão números, letras ou algarismos romanos para indicar a posição de cada item. Assim como nas listas não ordenadas, cada item individual é definido pela tag li (de "list item").</p>
+        <li>listas não-ordenadas</li>
+        <p>Listas não ordenadas são elementos fundamentais no HTML, representadas pela tag ul (de "unordered list"). Elas são usadas para agrupar itens que não precisam seguir uma sequência específica, ou seja, a ordem em que os itens aparecem não altera o significado da lista. Cada item dentro de uma lista não ordenada é definido pela tag li (de "list item").</p>
+    </ul>
+    <h3 id="links">Sobre links</h3>
+    <a href="#inicio">(Volta)</a>
+    <p>Links, ou hiperlinks, são a espinha dorsal da internet, conectando documentos e recursos na vastidão da World Wide Web. No HTML, eles são criados usando a tag <a>, que significa "âncora". A função mais básica de um link é permitir que os usuários naveguem de uma página para outra, seja dentro do mesmo site ou para um site completamente diferente. A essência de um link está em dois componentes principais: o atributo href e o conteúdo visível do link.</p>
+</body>
+</html>
